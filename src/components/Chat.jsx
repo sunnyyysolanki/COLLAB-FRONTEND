@@ -131,7 +131,7 @@ const Chat = ({ project, users }) => {
   async function saveFileTree(ft) {
     try {
       await axios.put(
-        `http://localhost:3000/project/file-tree`,
+         `${import.meta.env.VITE_API_URL}/project/file-tree`,
         { project_id, fileTree: ft },
         {
           headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
