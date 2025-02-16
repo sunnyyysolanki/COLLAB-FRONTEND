@@ -1,0 +1,18 @@
+/* Make scrollbar extremely thin */
+::-webkit-scrollbar {
+  width: 1px;
+  height: 2px; /* Ultra-thin */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: darkslategrey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.modal-content {
+  height: 80vh !important;
+}
